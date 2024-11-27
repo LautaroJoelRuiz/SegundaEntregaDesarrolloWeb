@@ -16,7 +16,7 @@
     font-size: 19px;
 }
 
-/*PROMOCION INICIO*/
+/*PROMOCION INICIO INDEX*/
 .promocion{
     padding: 60px;
     width:100vw;
@@ -43,10 +43,10 @@
     font-size: 20px;
     margin-left: 10px;
 }
-/*PROMOCION INICIO*/
+/*PROMOCION INICIO INDEX*/
 
 
-/*INFO BODY Y COMENTARIOS*/
+/*INFO BODY Y COMENTARIOS INDEX*/
 .info-body{
     display: block;
     text-align: center;
@@ -56,9 +56,9 @@
     margin-bottom: 10px;
     border-radius: 10px;
 }
-/*INFO BODY Y COMENTARIOS*/
+/*INFO BODY Y COMENTARIOS INDEX*/
 
-/*SLIDER INDEX*/
+/*SLIDER*/
 .slide{
     display: flex;
     align-items: center;
@@ -69,7 +69,57 @@
     justify-content: center;
     max-width: 700px;
 }
-/*SLIDER INDEX*/
+/*SLIDER*/
+
+/*ENCABEZADO PRODUCTOS*/
+.encabezado{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.encabezado h1{
+    text-decoration:underline;
+    font-weight: bolder;
+}
+/*ENCABEZADO PRODUCTOS*/
+
+/*PROMOCION PRODUCTOS*/
+.promoproductos { 
+    text-align: center;
+    text-decoration: underline;
+}
+
+.descripcionproducto{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-align: center;
+}
+
+.descripcionproducto:hover{
+    display: block;
+}
+
+.contenedorproductos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.contenedorproductos button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.contenedorproductos img{
+    max-width: 600px;
+}
+/*PROMOCION PRODUCTOS*/
 
 /*FOOTER*/
 .footer {

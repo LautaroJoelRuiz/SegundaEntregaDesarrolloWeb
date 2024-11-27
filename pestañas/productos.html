@@ -4,8 +4,193 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>En La Pera Bebidas 🍐</title>
+<!--BOOTSTRAP-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<!--BOOTSTRAP-->
+    
+<!--FONTAWASOME-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--FONTAWASOME-->
+    
+    
+<!--HOJA DE ESTILOS-->
+        <link rel="stylesheet" href="../estilos.css">
+<!--HOJA DE ESTILOS-->
 </head>
 <body>
-    
+<!--Barra de navegación-->
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#">En La Pera Bebidas 🍐</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Bienvenido</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pestañas/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pestañas/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pestañas/sobre-nosotros.html">Sobre Nosotros</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </div>
+        </nav>
+<!--Barra de navegación-->
+
+<!--ENCABEZADO-->
+    <div class="encabezado">
+        <h1>¡ESTOS PRODUCTOS Y MUCHO MAS!</h1>
+        <h3>Desliza ⏬</h3>
+    </div>
+<!--ENCABEZADO-->
+
+
+<!--SLIDER-->
+    <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://acdn.mitiendanube.com/stores/835/701/products/fernet-branca-aperitivo-1000-ml1-f361be27b92a8c5e0b16661028118789-1024-1024.webp" class="d-block w-100 img-fluid text-center mx-auto" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://acdn.mitiendanube.com/stores/835/701/products/gancia-americano-aperitivo-950ml11-bf7834f088aa34805b16661029164377-1024-1024.webp" class="d-block w-100 mx-auto" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://acdn.mitiendanube.com/stores/835/701/products/bombay-sapphire-gin-1000-ml1-e7caeaaa949bb46e3016660935183610-1024-1024.webp" class="d-block w-100 mx-auto" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://acdn.mitiendanube.com/stores/835/701/products/absolut-vodka-700-ml1-0e53d51eeb7dec82e016932519289590-1024-1024.webp" class="d-block w-100 mx-auto" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://acdn.mitiendanube.com/stores/835/701/products/jack-daniel_s-whisky-750-ml1-7ebaf76a524601abbf16660979325572-1024-1024.webp" class="d-block w-100 mx-auto" alt="...">
+        </div>
+        
+
+    </div>
+        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev " aria-hidden="true"></span>
+        <i class="fa-solid fa-chevron-right fa-flip-horizontal fa-2xl" style="color: #000000;"></i>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control" aria-hidden="true"></span>
+        <i class="fa-solid fa-chevron-right fa-2xl" style="color: #000000;"></i>
+        </button>
+    </div>
+<!--SLIDER-->
+
+
+<!--DESCRIPCION PRODUCTOS-->
+    <div class="promoproductos">
+        <h4>Contamos con variedad de productos de altísima calidad al mejor precio. ⏬</h4>
+    </div>
+
+    <div class="contenedorproductos">
+
+        <!--PRODUCTO 1-->
+        <img src="https://acdn.mitiendanube.com/stores/835/701/products/fernet-branca-aperitivo-1000-ml1-f361be27b92a8c5e0b16661028118789-1024-1024.webp" class="d-block w-100 img-fluid text-center mx-auto" alt="...">
+        <ul>
+            <li>Fernet Branca 1000ML</li>
+            <li>Precio: $14999</li>
+            <li class="descripcionproducto"> Descripción: 1845. Milán.Bernardino Branca, un singular autodidacta, obtiene una bebida única producto  de la sabia combinación de hierbas, cortezas, raíces y frutos macerados en alcohol. Con el tiempo se convertiría en un producto y una marca que trascendería las fronteras de Italia para expandirse  por el mundo.
+            Hoy, la combinación de ingredientes naturales obtenidos en distintas partes del mundo, macerados en alcohol, respetando estrictamente un  proceso que lleva más de 160 años y que  culmina con una paciente maduración de 12 meses en cubas de roble de Eslavonia es el secreto de Fernet Branca y constituyen su espíritu único.</li>
+        </ul>
+        
+        <button class="boton-comprar">Comprar </button>
+    <div>
+
+    <div class="contenedorproductos">
+        <!--PRODUCTO 2-->
+        <img src="https://acdn.mitiendanube.com/stores/835/701/products/gancia-americano-aperitivo-950ml11-bf7834f088aa34805b16661029164377-1024-1024.webp" class="d-block w-100 img-fluid text-center mx-auto" alt="...">
+        <ul>
+            <li>Gancia Americano 750ML</li>
+            <li>Precio: $5.336</li>
+            <li class="descripcionproducto"> Descripción: Es un aperitivo elaborado a partir de una exclusiva fórmula compuesta por 27 botánicos provenientes de Europa, Asia y América Latina. Se caracteriza por la presencia de sabores herbáceos y cítricos que se combinan con los del vino blanco y el alcohol. El sabor amargo de las hierbas se mezcla con el dulzor del azúcar logrando una bebida amable, agradable de beber, equilibrada y de gran personalidad. Tiene la particularidad de extenderse más allá de las fronteras del aperitivo ya que también se lo consume de noche como cocktail. Allí es donde reside su valor: en la versatilidad para conformar diferentes cocktails y adaptarse a distintos momentos y ocasiones.</li>
+            </ul>
+        
+        <button class="boton-comprar">Comprar </button>
+        <div>
+
+    <div class="contenedorproductos">
+        <!--PRODUCTO 3-->
+        <img src="https://acdn.mitiendanube.com/stores/835/701/products/bombay-sapphire-gin-1000-ml1-e7caeaaa949bb46e3016660935183610-1024-1024.webp" class="d-block w-100 img-fluid text-center mx-auto" alt="...">
+        <ul>
+            <li>Bombay Sapphire 1000ML</li>
+            <li>Precio: $65.331</li>
+            <li class="descripcionproducto">Bombay Sapphire es una de las ginebras premium más populares del mercado, gracias a que ninguno de sus 10 botanicos destaca especialmente (enebro, almendras, granos del paraíso, ralladura de limón, regaliz, raíz de orris, angélica, cilantro, bayas de cassia y cubeba) haciendo que sea perfecta para cualquier coctel de Ginebra y para preparan un Gin tonic equilibrado y perfecto para todos los paladares.La ginebra Bombay Sapphire London Dry Gin fue lanzada en 1987 la receta data de 1761 y se destilada en Cheshire, Inglaterra. El nombre viene de la popularidad de la ginebra en la India en la epoca de la colonización britanica.La botella es azul con los botanicos grabados en los laterales y un escudo que hace referencia a la reina Victoria de Inglaterra.
+            
+            </li>
+        </ul>
+
+        <button class="boton-comprar">Comprar </button>
+    <div>        
+        
+    <div class="contenedorproductos">
+        <!--PRODUCTO 4-->
+        <img src="https://acdn.mitiendanube.com/stores/835/701/products/absolut-vodka-700-ml1-0e53d51eeb7dec82e016932519289590-1024-1024.webp" class="d-block w-100 img-fluid text-center mx-auto" alt="...">
+        <ul>
+            <li>Absolut Vodka 700ML</li>
+            <li>Precio: $19.979</li>
+            <li class="descripcionproducto"> Descripción: Vodka Absolut es un vodka elaborado en Suecia por The Absolute Company, elaborado solamente con productos naturales y sin añadirle azúcar, hecho que le diferencia de muchos vodkas que si lo llevan.  Vodka Absolut es tan puro como el propio vodka.
+
+            Vodka Absolut salió a la venta en la ciudad de Nueva York en 1979 y se fue haciendo más popular primero en la ciudad, después en EEUU y popularizándose en el mundo entero, siendo en la actualidad la tercera bebida blanca más vendida</li>
+        </ul>
+        
+        <button class="boton-comprar">Comprar </button>
+    <div>
+
+    <div class="contenedorproductos">
+        <!--PRODUCTO 5-->
+        <img src="https://acdn.mitiendanube.com/stores/835/701/products/jack-daniel_s-whisky-750-ml1-7ebaf76a524601abbf16660979325572-1024-1024.webp" class="d-block w-100 img-fluid text-center mx-auto" alt="...">
+        <ul>
+            <li>Jack Daniel's 750ML</li>
+            <li>Precio: $40.838</li>
+            <li class="descripcionproducto"> Descripción: Jack Daniel's Old No. 7 es suavizado gota por gota a través de una columna de 3mts de carbón artesanal de arce y luego se lo deja añejar en barriles de roble de primer uso, fabricados artesanalmente. Jack Daniel's está listo sólo cuando los catadores lo prueban y comprueban que ha madurado lo suficiente (de 4 a 6 años aprox). Un siglo después, todavía se juzga del mismo modo, por su apariencia, su olor y por supuesto, por su sabor.</li>
+        </ul>
+
+        <button class="boton-comprar">Comprar </button>
+
+    </div>
+<!--DESCRIPCION PRODUCTOS-->
+
+
+<!--FOOTER-->
+    <footer class="footer">
+        <p>Nuestras Redes Sociales</p>
+    <div class="redes">
+        <div class="">
+            <a href="" class="icono">
+                <i class="fa-brands fa-square-facebook"></i>
+            </a>
+        </div>
+        <div class="">
+            <a href="" class="icono">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
+        </div>
+        <div class="">
+            <a href="" class="icono">
+                <i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+        </div>
+    </div>
+    </footer>
+<!--FOOTER-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
