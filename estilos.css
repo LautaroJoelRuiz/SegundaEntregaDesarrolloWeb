@@ -73,8 +73,9 @@
 
 /*ENCABEZADO PRODUCTOS*/
 .encabezado{
-    margin-top: 60px;
+    margin-top: 55px;
     text-align: center;
+    background-color: rgb(160, 159, 159)
 }
 
 .encabezado h1{
@@ -87,6 +88,7 @@
 .promoproductos { 
     text-align: center;
     text-decoration: underline;
+    background-color: rgb(160, 159, 159)
 }
 
 .descripcionproducto{
@@ -120,6 +122,72 @@
     max-width: 600px;
 }
 /*PROMOCION PRODUCTOS*/
+
+/*HOJA SOBRENOSOTROS*/
+.contenedorcreador{
+    width: 100%;
+    background-color: rgb(160, 159, 159);
+    padding: 2px;
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 75px);
+    grid-gap: 30px;
+}
+
+.contenedortexto1{
+    grid-column:1/7;
+    text-align: center;
+}
+
+.contenedorfoto{
+    background-image: url(./multimedia/fotocreador.jpeg);
+    border: 2px solid #000;
+    background-size: cover;
+    background-position: center;
+    grid-column: 2/6;
+    grid-row: 2/5;
+    border-radius: 20px;
+
+}
+
+.contenedortexto{
+    font-size: 16px;
+    text-align: center;
+    padding: 5px;
+    grid-column: 1/7;
+}
+
+.contenedormapa{
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    margin: 10px;
+    text-align: center;
+}
+
+.objetivos{
+    text-align: center;
+}
+
+.principios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+.principio{
+    border: 3px solid #000;
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+/*HOJA SOBRENOSOTROS*/
 
 /*FOOTER*/
 .footer {
