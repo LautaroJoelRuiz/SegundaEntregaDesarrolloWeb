@@ -25,7 +25,7 @@
     max-height: 1200px;
     align-items: center;
     justify-content:start;
-    background: url(/multimedia/fotoinicio.jpg) center center ;
+    background: url(multimedia/fotoinicio.jpg) center center ;
     background-size: cover;
     background-color: black;
 }
@@ -143,7 +143,7 @@
 }
 
 .contenedorfoto{
-    background-image: url(./multimedia/fotocreador.jpeg);
+    background-image: url(multimedia/fotocreador.jpeg);
     border: 2px solid #000;
     background-size: cover;
     background-position: center;
@@ -200,7 +200,7 @@
     height: 75vh;
     align-items: center;
     justify-content:start;
-    background: url(/multimedia/servicios.jpg) center center ;
+    background: url(multimedia/servicios.jpg) center center ;
     background-size: cover;
 }
 
