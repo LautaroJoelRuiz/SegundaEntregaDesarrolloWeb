@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+$color-boton: white;
+
+@mixin display ($dis,$align,$justify,$textalign){
+    display: $dis;
+    align-items: $align;;
+    justify-content: $justify;
+    text-align: $textalign;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.navbar-brand{
+    font-size: 19px;
+    display: block;
+}
+
+/*PROMOCION INICIO INDEX*/
+.promocion{
+    padding: 60px;
+    width:100vw;
+    min-height: 500px;
+    max-height: 1200px;
+    align-items: center;
+    justify-content:start;
+    background: url(multimedia/fotoinicio.jpg) center center ;
+    background-size: cover;
+    background-color: black;
+
+    .promocion-texto{
+        color: white;
+        background-color: rgba(0, 0, 0, 0.384);
+        padding: 0;
+        height: auto;
+        margin-top: 75px;
+
+        a{
+            text-decoration: none;
+            color: black;
+            background-color: $color-boton;
+            border-radius: 5px;
+            height: 30px;
+            font-size: 20px;
+            margin-left: 10px;
+
+        }
+    }
+}
+
+
+/*PROMOCION INICIO INDEX*/
+
+
+/*INFO BODY Y COMENTARIOS INDEX*/
+.info-body{
+    display: block;
+    text-align: center;
+    button{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+}
+
+/*INFO BODY Y COMENTARIOS INDEX*/
+
+/*SLIDER*/
+.slide{
+    display: flex;
+    align-items: center;
+    img {
+        max-width: 700px;
+    }
+
+}
+/*SLIDER*/
+
+/*ENCABEZADO PRODUCTOS*/
+.encabezado{
+    margin-top: 7vh;
+    text-align: center;
+    background-color: rgb(160, 159, 159)
+}
+
+.encabezado h1{
+    text-decoration:underline;
+    font-weight: bolder;
+}
+/*ENCABEZADO PRODUCTOS*/
+
+/*PROMOCION PRODUCTOS*/
+.promoproductos {
+    text-align: center;
+    text-decoration: underline;
+    background-color: rgb(160, 159, 159)
+}
+
+.descripcionproducto{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-align: center;
+}
+
+.descripcionproducto:hover{
+    display: block;
+}
+
+.contenedorproductos{
+    @include display(flex,center ,center,center);
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    button{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        background-color: rgb(236, 236, 236);
+    }
+    img{
+        max-width: 600px;
+    }
+}
+
+/*PROMOCION PRODUCTOS*/
+
+/*BUCLE FOR */
+.para{
+    width: 200px;
+    background-color: rgb(212, 212, 212);
+    border: 2px solid ;
+    height: auto;
+    margin: 5px;
+    @include display(flex, center, center, center);
+}
+
+@for $decrecimiento from 1 through 3 {
+    .demanda-#{$decrecimiento} {
+        
+        width: 80vw / $decrecimiento;
+        height: 200px;
+        background-size:20px;
+        margin-left: 20px;
+    }
+    .bucle{
+        text-decoration: underline;
+        font-family: DM sans;
+        font-weight: 1000;
+    }
+}
+/*BUCLE FOR */
+
+/*HOJA SOBRENOSOTROS*/
+.contenedorcreador{
+    width: 100%;
+    background-color: rgb(160, 159, 159);
+    padding: 2px;
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 75px);
+    grid-gap: 30px;
+}
+
+.contenedortexto1{
+    grid-column:1/7;
+    text-align: center;
+}
+
+.contenedorfoto{
+    background-image: url(multimedia/fotocreador.jpeg);
+    border: 2px solid #000;
+    background-size: cover;
+    background-position: center;
+    grid-column: 2/6;
+    grid-row: 2/5;
+    border-radius: 20px;
+
+}
+
+.contenedortexto{
+    font-size: 16px;
+    text-align: center;
+    padding: 5px;
+    grid-column: 1/7;
+}
+
+.contenedormapa{
+    @include display(block, center, center,center);
+    height: auto;
+    margin: 10px;
+}
+
+.objetivos{
+    text-align: center;
+}
+
+.globos{
+    @include display(flex,center, center, center);
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 5px;
+    .globo{
+        border: 3px solid #000;
+        width: 200px;
+        height: auto;
+        border-radius: 20px;
+        background-color: black;
+        color: white;
+    }
+}
+
+/*HOJA SOBRENOSOTROS*/
+
+
+/*HOJA SERVICIOS*/
+.servicios{
+    padding: 80px;
+    margin-top: 50px;
+    width:100vw;
+    height: 75vh;
+    align-items: center;
+    justify-content:start;
+    background: url(multimedia/servicios.jpg) center center ;
+    background-size: cover;
+}
+
+.servicios-texto{
+    color: $color-boton;
+    background-color: rgba(0, 0, 0, 0.384);
+    padding: 0;
+    height: auto;
+    margin-top: 75px;
+}
+
+.servicios-texto a{
+    text-decoration: none;
+    color: black;
+    background-color: $color-boton;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+/*HOJA SERVICIOS*/
+
+/*HOJA CONTACTO*/
+.contacto{
+    padding: 80px;
+    margin-top: 50px;
+    width:100vw;
+    height: 75vh;
+    align-items: center;
+    justify-content:start;
+    background: url(https://img.freepik.com/vector-gratis/diseno-centro-llamadas_24877-49643.jpg?t=st=1732934371~exp=1732937971~hmac=836dd7daf3a8dbe489f30980eeebec52c8919e67620296c9e70fde5114e7a56b&w=900) center center ;
+    background-size: cover;
+}
+
+.contacto-texto{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.384);
+    padding: 0;
+    height: auto;
+    margin-top: 75px;
+    a{
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        border-radius: 5px;
+        height: 30px;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+}
+
+
+/*HOJA CONTACTO*/
+
+/*FOOTER*/
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.redes {
+    @include display(flex, center, center, center);
+    font-size: 20px;
+    gap: 50px;
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 30px;
+    }
+}
+
+/*FOOTER*/
+
+@media only screen and (min-width:320px){
+    *{
+        font-size: 16px;
+    }
+
+}
+
+
+@media only screen and (min-width:755px){
+    *{
+        font-size: 20px;
+    }
+    .navbar-brand{
+        font-size: 22px;
+
+    }
+    .contenedorfoto{
+        grid-column: 3/5;
+    }
+    .mapa{
+        width: 500px;
+        height: 500px;
+    }
+
+    .globo{
+        width: 250px;
+    }
+}
+
+@media only screen and (min-width:1400px){
+    *{
+        font-size: 18px;
+    }
+
+    .encabezado{
+        margin-top: 60px;
+    }
+    .contenedorfoto{
+        grid-column: 3/5;
+        grid-row: 2/8;
+    }
+}
+
+@media only screen and (min-width:1440px){
+    *{
+        font-size: 20px;
+    }
+
+    .navbar-brand{
+        font-size: 30px;
+    }
+
+    .contenedorcreador{
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(5, 100px);
+    }
+    .contenedorfoto{
+        grid-column: 4/6;
+        grid-row: 2/8;
+    }
+    .contenedortexto{
+        grid-column: 1/9;
+    }
+    .contenedortexto1{
+        grid-column: 1/9;
+
+    }
+
+    .globo{
+        width: 350px;
+    }
+}
+
